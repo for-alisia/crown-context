@@ -1,0 +1,24 @@
+/** Libraries */
+import React, { useContext } from 'react';
+
+/** Context */
+import { DirectoryContext } from '../../contexts/directory/directory.context';
+
+/** Components */
+import MenuItem from '../menu-item/menu-item.component';
+
+/** Styles */
+import './directory.styles.scss';
+
+const Directory = () => {
+  const { sections } = useContext(DirectoryContext);
+  return (
+    <div className='directory-menu'>
+      {sections.map(({ id, ...otherSectionProps }) => (
+        <MenuItem key={id} {...otherSectionProps} />
+      ))}
+    </div>
+  );
+};
+
+export default Directory;

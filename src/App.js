@@ -1,25 +1,67 @@
-import logo from './logo.svg';
+/** Libraries */
+import React, { useState, useEffect } from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
+
+/** Utils */
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+
+/** Pages */
+import HomePage from './pages/homepage/homepage.component';
+import ShopPage from './pages/shop/shop.component';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import CheckoutPage from './pages/checkout/checkout.component';
+
+/** Components */
+import Header from './components/header/header.component';
+
+/** Context */
+import CurrentUserContext from './contexts/current-user/current-user.context';
+
+/** Styles */
 import './App.css';
 
-function App() {
+const App = () => {
+  const [currentUser, setCurrentUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
+      if (userAuth) {
+        const userRef = await createUserProfileDocument(userAuth);
+        if (userRef) {
+          userRef.onSnapshot((snapShot) => {
+            setCurrentUser({
+              id: snapShot.id,
+              ...snapShot.data(),
+            });
+          });
+        }
+      }
+
+      setCurrentUser(userAuth);
+    });
+
+    return unsubscribeFromAuth;
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CurrentUserContext.Provider value={currentUser}>
+        <Header />
+      </CurrentUserContext.Provider>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/shop' component={ShopPage} />
+        <Route exact path='/checkout' component={CheckoutPage} />
+        <Route
+          exact
+          path='/signin'
+          render={() =>
+            currentUser ? <Redirect to='/' /> : <SignInAndSignUpPage />
+          }
+        />
+      </Switch>
     </div>
   );
-}
+};
 
 export default App;
