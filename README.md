@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+# CROWN cloth e-commerce React project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![alt text](https://lh3.googleusercontent.com/PLovMKZh064lhDzjc2U7AjHeA4TR6sb1vDjfDh3fSQ2-4vYcqkm9_bNwK7HQaD0eysVeK-mKy014Jo_nelquROg75nDncjbFl6iw11kgPmho4PIaWAEmknmxGtHaTFT0Wqma1Im7VyfeRGLSyVaMou6fSCLJfTCLuRWNru0GfbWUPF5M1ZI9XYm8gr-QX4gvv3wuUC9DWvmCBcQ9zymlL1F_StyJN_Wby0nre10PUa4YNQkyjDoOLeUq0phwLP1-4vjC2s3w670miTlJKfWnx-g2Xnnn8HAWKG_dLKtwycy8IDw_NXiNYlLyvTzYqzmFVlEKoWSYXbWDxpWcsC6Sk7ZsBbiqc0ycDikwF8Jm73hMLwE2ocQc3Sxg4Z2OKCXzExAVzMUiaOcIiXGacTPdfAE-j-pHU_Fq4DcPhaQcDwhG4aIVcxmFCT_7DXbtzfkIZFgrAOBMmkz9q1PA0e8ugu4yvknoyGXI2YC3Bc3fnHZy8kxocVO4E5qhEd8l-s_72okh7WClJ6KyEaeUngBn4NoX3-YECFDNfDTgol1LfztDtfbA76cFjKBE6p6zkU86vegvbdKenT5IqstL50NRoAjnRIkpmXM7oi-VTnKqwyCMGBO59tUFZ4bdCKTcrHc7klKw1ov5Zh6qTJdwPVHHb4YTLgOKF0FNBmQx4bS_93nJuWJ_yeg2vSr61ezyUw=w1244-h735-no?authuser=0)
 
-## Available Scripts
+### Installation
 
-In the project directory, you can run:
+1. Clone project: git clone https://github.com/for-alisia/crown-context.git crown-clth-context
+2. npm install
+3. npm start
 
-### `npm start`
+### Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Simple react e-commerce project, created as example of using Context API from react library. App uses Firebase (firestore and authentification) as a backend.
