@@ -1,13 +1,15 @@
 # CROWN cloth e-commerce React project
 
-![alt text](https://lh3.googleusercontent.com/PLovMKZh064lhDzjc2U7AjHeA4TR6sb1vDjfDh3fSQ2-4vYcqkm9_bNwK7HQaD0eysVeK-mKy014Jo_nelquROg75nDncjbFl6iw11kgPmho4PIaWAEmknmxGtHaTFT0Wqma1Im7VyfeRGLSyVaMou6fSCLJfTCLuRWNru0GfbWUPF5M1ZI9XYm8gr-QX4gvv3wuUC9DWvmCBcQ9zymlL1F_StyJN_Wby0nre10PUa4YNQkyjDoOLeUq0phwLP1-4vjC2s3w670miTlJKfWnx-g2Xnnn8HAWKG_dLKtwycy8IDw_NXiNYlLyvTzYqzmFVlEKoWSYXbWDxpWcsC6Sk7ZsBbiqc0ycDikwF8Jm73hMLwE2ocQc3Sxg4Z2OKCXzExAVzMUiaOcIiXGacTPdfAE-j-pHU_Fq4DcPhaQcDwhG4aIVcxmFCT_7DXbtzfkIZFgrAOBMmkz9q1PA0e8ugu4yvknoyGXI2YC3Bc3fnHZy8kxocVO4E5qhEd8l-s_72okh7WClJ6KyEaeUngBn4NoX3-YECFDNfDTgol1LfztDtfbA76cFjKBE6p6zkU86vegvbdKenT5IqstL50NRoAjnRIkpmXM7oi-VTnKqwyCMGBO59tUFZ4bdCKTcrHc7klKw1ov5Zh6qTJdwPVHHb4YTLgOKF0FNBmQx4bS_93nJuWJ_yeg2vSr61ezyUw=w1244-h735-no?authuser=0)
+### Description
+
+Simple react e-commerce project, created as example of using Context API from react library. App uses Firebase (firestore and authentification) as a backend.
+
+It's just an example of how to use Context API as a state manager for small and medium projects. This project has it's twin with an Apollo GraphQL as a state management. You can find it [here](https://github.com/for-alisia/crown-apollo)
+
+![project preview here](src/assets/preview.png)
 
 ### Installation
 
 1. Clone project: git clone https://github.com/for-alisia/crown-context.git crown-clth-context
 2. npm install
 3. npm start
-
-### Description
-
-Simple react e-commerce project, created as example of using Context API from react library. App uses Firebase (firestore and authentification) as a backend.
